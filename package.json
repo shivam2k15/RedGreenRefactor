@@ -1,14 +1,34 @@
 {
-  "name": "tdd",
+  "name": "redgreenrefactor",
   "version": "1.0.0",
   "description": "Test Driven Development",
-  "main": "stringCalculator.js",
+  "main": "server.ts",
   "scripts": {
-    "test": "jest"
+    "test": "vitest run",
+    "dev": "vitest run --watch",
+    "test:coverage": "vitest run --coverage",
+    "start": "tsx server.ts"
   },
-  "author": "Shivam",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivam2k15/RedGreenRefactor.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/shivam2k15/RedGreenRefactor/issues"
+  },
+  "homepage": "https://github.com/shivam2k15/RedGreenRefactor#readme",
+  "dependencies": {
+    "fastify": "^5.8.5"
+  },
   "devDependencies": {
-    "jest": "^29.7.0"
+    "@types/node": "^25.6.0",
+    "supertest": "^7.2.2",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.5"
   }
 }
